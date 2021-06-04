@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32f013a013.js" crossorigin="anonymous"></script>
+    <title>Conversor de Escalas Termométricas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main class="contain">
+        <div class="cabecalho">
+            <h2>Conversor de Escalas Termométricas</h2>
+        </div>
+        <form action="">
+        <div class="escalaInicial">
+            <h3 class= "textos">Escala Inicial:</h3>
+            <select  class= "valores" id="opcoesI" >
+                <option   id="CI" value="°C" >Celsius</option>
+                <option   id="FI" value="°F">Fehrenheit</option>
+                <option  id="KI" value="K">Kelvin</option>
+            </select>
+        </div>
+        <div class="valorInicial">
+            <h3 class= "textos">Valor Inicial:</h3>
+            <input type="text" id="valorInicial" name="valorInicial" class= "valores"
+                    placeholder="Insira o valor inicial" >
+                    <div class="underline"></div>
+        </div>
+        <div class="escalaFinal">
+            <h3 class= "textos">Escala Final</h3>
+            <select class= "valores" id = "opcoesF" >
+                <option  id="CF" value="°C" >Celsius</option>
+                <option  id="FF" value="°F">Fehrenheit</option>
+                <option  id="KF" value="K">Kelvin</option>
+            </select>
+        </div>
+        <div class="valorFinal">       
+            <span id="valorF">
+                <h3 id="html">
+                    <h3 class = "textos" >Valor Final:</h3>
+                    <h3 class= "valores" id = "valor"></h3>
+                </h3>
+            </span>
+        </div>
+
+        <button type="button" onclick="obterEscala()" id="btnCalcular">Converter</button>
+    </form>
+    
+
+
+        
+        <div class="rodape">
+            <span></span>
+            <div class="social-field">
+                <div class="social-field instagram">
+                    <a href="https://www.instagram.com/ideias.desenvolvedora/">
+                        <i class="fab fa-instagram-square"></i>
+                        instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

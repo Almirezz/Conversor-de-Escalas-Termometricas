@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0 ;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+div.cabecalho{
+    position: relative;
+    flex-direction: column;
+    border:solid 5px;
+    border-color: rgb(0, 255, 191); 
+}
+body{
+    background: linear-gradient(45deg, #000000, #000000);
+    background-repeat: no-repeat;
+    /* min-height:100vh; para igualar a altura do pai(100%)*/
+    /*min-width:100vh;  para  igualar ao comprimento do pai(100%)*/
+    min-height:100vh;
+    min-width:100vh;
+    display: flex;
+    /*align-items: center; para centrailizar verticalmente*/ 
+    /* justify-content: center; para centrailizar horizontalmente*/ 
+    justify-content: center;  
+    align-items: center;  
+}
+main h3, h2{
+    color:rgb(0, 0, 0)
+}
+main.contain{
+    background: rgb(255, 255, 255);
+    min-width:50vh;
+    min-height: 100vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    align-items: normal;   
+
+} 
+
+main h2{
+    font-size: 10vh;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 1vh;
+    min-width: 80vh;
+    bottom: 0.5vh;
+    left: 0;
+    border-radius: 18vh;
+    background: linear-gradient(45deg, #2da9e2, #e00000);
+}
+form{
+    position: relative;
+    min-width:50vh;
+    min-height: 50vh;
+    flex-direction: column;
+    border:solid 5px;
+    border-color:rgb(229, 255, 0);
+}
+div{
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+    display:inline-block;
+    border:solid 5px;
+    border-color: #e00000;
+    
+}
+.textos{ 
+    position:relative;   
+    left:25vh;
+    font-size: 5vh;
+}
+.valores{
+    left:25vh;
+    font-size: 5vh;
+    margin-top: 0.5rem;
+    min-height:10vh;
+    min-width:10vh;
+    position: relative;
+    vertical-align: bottom;
+    border:solid 5px;
+    border-color:#3ce22d ; 
+}
+h3.valores#valor {
+    left:27vh;
+    position: relative;
+    vertical-align: bottom;
+
+
+}
+div.valorInicial  {
+    font-size: 5vh;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+input#valorInicial{
+    width: 35vh;
+}
+
+.valorInicial input ::placeholder {
+    color:rgba(0, 0, 0, 0.5)
+}
+
+#btnCalcular{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    padding: 4vh;
+    background: linear-gradient(to left, #313131, #000000);
+    border:solid 1px;
+    border-color:rgb(248, 255, 146) ; 
+    cursor: pointer;
+    color:rgb(248, 255, 146);
+    font-size:5vh;
+    font-weight: 300;
+    border-radius: 5vh;
+    transition: all 0.3s ease;
+
+}
+
+div.rodape {
+    min-width:100vh;
+    min-height:5vh;
+    position:relative;
+    display:block;
+    bottom:0;
+    right:0;
+    color: rgba(255, 255, 255, 0.534);
+    margin-top: 5vh;
+    border:solid 5px;
+    border-color: rgb(0, 60, 255); 
+
+}
+
+#social-field{
+    position:relative;
+    min-width:100vh;
+    min-height:20vh;
+    right:0;
+}
+
+
+
+
+
